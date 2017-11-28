@@ -1,0 +1,178 @@
+// SCSS
+// Author: Rhys P. Judd
+// rhyspjudd.com
+//
+
+// Title: donateApp
+
+//
+//
+
+/* Global resets */
+
+* {box-sizing: border-box; margin: 0; padding: 0;}
+
+// 
+// Color Pallette
+// 
+
+$blue: #20A1D4;
+$green: #1CBC2C;
+$orange: #EF5F3C;
+$black: #424242;
+$gray: #777;
+$lightGray: #eaeaea;
+
+//
+// Variables
+//
+
+$mobWidth: 320px;
+$tabWidth: 600px;
+$tabHeight: 50px;
+$btnWidth: 200px;
+$btnFontWeight: 500;
+$boxShadow: 2px 2px 2px $lightGray;
+$headFont: "rooney-web", 'AmericanTypewriter', Rockwell, serif;
+$bodyFont: "rooney-sans", Avenir-Book, Calibri, sans-serif; 
+$bodyFontSize: 1em;
+
+//
+//
+//
+
+//
+/* Fonts */
+//
+
+h1 {
+    font-family: $headFont;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2 {
+    color: $gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.4em;
+}
+
+h3 {
+    line-height: 3em;
+    font-weight: 700;
+}
+
+strong {
+    color: $lightGray;
+}
+
+p strong {
+    color: $orange;
+}
+
+//
+/* Global Styles */
+//
+
+body {
+    font-family: $bodyFont;
+    line-height: 1.4em;
+    font-size: $bodyFontSize;
+    color: $gray;
+}
+
+.container {
+    margin: 2em auto;
+    max-width: 630px;
+    text-align: center;
+}
+
+form {
+    border: 1px solid $gray;
+    width: $tabWidth;
+    margin-bottom: 25px;
+}
+
+article {
+    padding: 50px;
+}
+
+a {
+    color: $blue;
+    padding: 20px 0 0 25px;
+}
+
+.btn:hover {
+    background-color: $green;
+}
+
+h5 a {
+    padding: 0;
+}
+
+.btn, .btn-lg {
+    width: $btnWidth;
+    background-color: $lightGray;
+    color: $gray;
+    font-weight: $btnFontWeight;
+    box-shadow: $boxShadow;
+    font-size: 1em;
+    margin: 10px;
+}
+
+article .btn {
+    width: $btnWidth;
+    height: 50px;
+    background: $green;
+    color: $lightGray;
+    font-weight: $btnFontWeight;
+    margin: 0;
+    box-shadow: none;
+}
+
+article .btn:hover {
+    background-color: $lightGray;
+    color: $green;
+    border: 0.5px solid $gray;
+}
+
+//
+/* Local Classes */
+//
+
+.input-group {
+    height: 50px;
+}
+
+.row {
+    margin: 0;
+}
+
+.progress-bar {
+    background: $orange;
+}
+
+.talk-bubble {
+    display: inline-block;
+    position: relative;
+	width: $tabWidth;
+	height: 70px;
+	background-color: #424242;
+    margin-bottom: 25px;
+    box-shadow: $boxShadow;
+}
+
+.tri-right:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: auto;
+	right: 30px;
+	bottom: -30px;
+	border: 20px solid;
+	border-color: $gray $gray transparent transparent;
+}
