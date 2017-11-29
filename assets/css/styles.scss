@@ -12,9 +12,9 @@
 
 * {box-sizing: border-box; margin: 0; padding: 0;}
 
-// 
+//
 // Color Pallette
-// 
+//
 
 $blue: #20A1D4;
 $green: #1CBC2C;
@@ -34,7 +34,7 @@ $btnWidth: 200px;
 $btnFontWeight: 500;
 $boxShadow: 2px 2px 2px $lightGray;
 $headFont: "rooney-web", 'AmericanTypewriter', Rockwell, serif;
-$bodyFont: "rooney-sans", Avenir-Book, Calibri, sans-serif; 
+$bodyFont: "rooney-sans", Avenir-Book, Calibri, sans-serif;
 $bodyFontSize: 1em;
 
 //
@@ -106,7 +106,7 @@ a {
 }
 
 .btn:hover {
-    background-color: $green;
+    background-color: $blue;
 }
 
 h5 a {
